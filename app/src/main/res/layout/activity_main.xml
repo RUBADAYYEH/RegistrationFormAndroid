@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registration form"
+        />
+
+
+    <EditText
+        android:id="@+id/nameEdtTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:hint="Enter your name" />
+    <EditText
+        android:id="@+id/emailEdtTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Enter your email" />
+    <Spinner
+        android:id="@+id/facultySpnn"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_marginTop="20dp"
+        android:background="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" >
+        <RadioButton
+            android:id="@+id/maleRB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male" />
+        <RadioButton
+            android:id="@+id/femaleRB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female" />
+
+    </RadioGroup>
+    <Switch
+        android:id="@+id/lastYearSw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Last year"
+        />
+    <Button
+        android:id="@+id/saveBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:onClick="saveBtnClick"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp" />
+    <TextView
+        android:id="@+id/resultTxtView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" />
+
+
+
+
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
